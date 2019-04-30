@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:nhio_typo3_cms/Configuration/TsConfig/User/010-AllUsers" extensions="tsconfig">

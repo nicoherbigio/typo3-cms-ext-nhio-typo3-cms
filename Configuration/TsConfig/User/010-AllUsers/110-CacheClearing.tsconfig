@@ -1,0 +1,13 @@
+### The following settings apply to the cache clearing in the TYPO3 CMS backend.
+
+options {
+    clearCache {
+        # Enables clearing of front-end and page-related caches for non-administrators.
+        # data type: Boolean; default: 0
+        pages = 1
+
+        # Enables clearing of front-end, back-end and page-related for non-administrators.
+        # data type: Boolean; default: 0
+        all = 1
+    }
+}

@@ -1,0 +1,11 @@
+### The following settings apply to the clipboard handling in the TYPO3 CMS backend.
+
+options {
+    # Disables saving clipboard content beyond the end of the session.
+    # data type: Boolean; default: not specified
+    saveClipboard = 0
+
+    # Sets the number of available clipboards to the specified value.
+    # data type: Integer; default: 3
+    clipboardNumberPads = 1
+}

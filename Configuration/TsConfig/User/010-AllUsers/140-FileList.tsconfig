@@ -1,0 +1,24 @@
+### The following settings apply to the file list in the TYPO3 CMS backend.
+
+options {
+    file_list {
+        # Activates the "Advanced View" option.
+        # !!! The user has NO possibility to adjust this setting.
+        # data type: String; default: selectable
+        enableDisplayBigControlPanel = activated
+
+        # Disables the "Show preview images" option.
+        # !!! The user has NO possibility to adjust this setting.
+        # data type: String; default: selectable
+        enableDisplayThumbnails = deactivated
+
+        # Sets the option "Show Clipboard" to selectable.
+        # !!! The user has NO possibility to adjust this setting.
+        # data type: String; default: selectable
+        enableClipBoard = selectable
+
+        # Sets the number of files to display per page to the specified value.
+        # data type: Integer; default: 40
+        filesPerPage = 50
+    }
+}

@@ -1,0 +1,10 @@
+### The following settings apply to the admin panel in the TYPO3 CMS frontend.
+
+admPanel {
+    enable.cache = 0
+    enable.edit = 0
+    enable.info = 0
+    enable.preview = 0
+    enable.publish = 0
+    enable.tsdebug = 0
+}

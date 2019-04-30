@@ -1,0 +1,95 @@
+### The following settings set the default settings when creating new users in the TYPO3 CMS backend.
+### @see /typo3/sysext/core/Classes/Authentication/BackendUserAuthentication.php
+
+setup {
+
+    ### The following settings apply to the "personal data" tab.
+
+    # By default, enables e-mail notification when logging in to the TYPO3 CMS backend.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Boolean; default: 0
+    default.emailMeAtLogin = 1
+
+    # By default, sets the language of the TYPO3 CMS backend to German.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: String; default: en
+    default.lang = de
+
+
+    ### The following settings apply to the "at start" tab.
+
+    # By default, sets the display to the "user settings" module after logging in.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: String; default: help_AboutAboutmodules
+    default.startModule = user_setup
+
+
+    ### The following settings apply to the "edit and advanced functions" tab.
+
+    # Activates the rich text editor.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Boolean; default: 1
+    fields.edit_RTE.disabled = 1
+    overrides.edit_RTE = 1
+
+    # Enables resizing of text fields.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Boolean; default: 0
+    fields.resizeTextareas_Flexible.disabled = 1
+    overrides.resizeTextareas_Flexible = 1
+
+    # Sets the maximum height of flexible text fields to the specified value.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Boolean; default: 1
+    fields.resizeTextareas_MaxHeight.disabled = 1
+    overrides.resizeTextareas_MaxHeight = 500
+
+    # Sets the maximum characters of page titles to be displayed at the specified value.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Integer; default: 50
+    fields.titleLen.disabled = 1
+    overrides.titleLen = 50
+
+    # Disables the display of preview images.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Boolean; default: 1
+    fields.thumbnailsByDefault.disabled = 1
+    overrides.thumbnailsByDefault = 0
+
+    # Disables the upload of files directly in the "web" module.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Boolean; default: 1
+    fields.edit_docModuleUpload.disabled = 1
+    overrides.edit_docModuleUpload = 0
+
+    # Disables the display of protected files and directories starting with a period.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Boolean; default: 0
+    fields.showHiddenFilesAndFolders.disabled = 1
+    overrides.showHiddenFilesAndFolders = 0
+
+    # Sets the recursive copying of pages to the specified value.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Integer; default: 50
+    default.copyLevels = 0
+
+    # Disables the recursive deletion of pages.
+    # !!! The user has NO possibility to adjust this setting.
+    # data type: Boolean; default: 0
+    fields.recursiveDelete.disabled = 1
+    overrides.recursiveDelete = 0
+}
+
+
+### The following settings only apply to administrators.
+
+[backend.user.isAdmin == 1]
+    setup {
+        # By default, enables the display of protected files and directories starting with a period.
+        # !!! The user has NO possibility to adjust this setting.
+        # data type: Boolean; default: 0
+        fields.showHiddenFilesAndFolders.disabled = 0
+        default.showHiddenFilesAndFolders = 1
+        overrides.showHiddenFilesAndFolders =
+    }
+[GLOBAL]

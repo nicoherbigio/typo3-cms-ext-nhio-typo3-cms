@@ -1,0 +1,21 @@
+### The following settings apply to the element browser in the TYPO3 CMS backend.
+
+options {
+    # Disables the creation of folders for non-administrators.
+    # data type: Boolean; default: not specified
+    createFoldersInEB = 0
+
+    # Enables the display of preview images.
+    # data type: Boolean; default: not specified
+    noThumbsInEB = 0
+
+    folderTree {
+        # Sets the number of available upload fields of files.
+        # data type: Integer; default: 3
+        uploadFieldsInLinkBrowser = 0
+
+        # Disables the display for creating folders.
+        # data type: Boolean; default: not specified
+        hideCreateFolder = 0
+    }
+}

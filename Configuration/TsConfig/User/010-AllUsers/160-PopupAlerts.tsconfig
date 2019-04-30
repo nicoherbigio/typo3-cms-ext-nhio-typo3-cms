@@ -1,0 +1,8 @@
+### The following settings apply to the popup handling in the TYPO3 CMS backend.
+
+options {
+    # Disables the display of a pop-up window when performing subsequent actions.
+    #   * Change the type of an entry (e.g. change from type Page to type SysFolder etc.)
+    # data type: Integer; default: 255
+    alertPopups = 254
+}

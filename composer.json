@@ -1,0 +1,70 @@
+{
+  "name": "nicoherbigio/typo3-cms-ext-nhio-typo3-cms",
+  "description": "TYPO3 CMS Customization Package",
+
+  "type": "typo3-cms-extension",
+
+  "keywords": ["TYPO3 CMS", "Nico Herbig"],
+  "homepage": "https://www.nicoherbig.io",
+  "license": "GPL-2.0-or-later",
+
+  "authors": [
+    {
+      "name": "Nico Herbig",
+      "email": "info@nicoherbig.io",
+      "homepage": "https://www.nicoherbig.io",
+      "role": "Developer"
+    }
+  ],
+
+  "support": {
+    "issues": "https://github.com/nicoherbigio/typo3-cms-ext-nhio-typo3-cms/issues"
+  },
+
+  "require": {
+    "php": "^7.2.0",
+
+    "typo3/cms-backend": "^9.5",
+    "typo3/cms-core": "^9.5"
+  },
+
+  "require-dev": {
+    "typo3/testing-framework": "^4.12"
+  },
+
+  "replace": {
+    "nhio_typo3_cms": "self.version",
+    "typo3-ter/nhio-typo3-cms": "self.version"
+  },
+
+  "autoload": {
+    "psr-4": {
+    }
+  },
+
+  "autoload-dev": {
+    "psr-4": {
+    }
+  },
+
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+
+  "scripts": {
+    "post-autoload-dump": [
+      "mkdir -p .Build/public/typo3conf/ext/",
+      "[ -L .Build/public/typo3conf/ext/nhio_typo3_cms ] || ln -snvf ../../../../. .Build/public/typo3conf/ext/nhio_typo3_cms"
+    ]
+  },
+
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    },
+    "typo3/cms": {
+      "web-dir": ".Build/public"
+    }
+  }
+}

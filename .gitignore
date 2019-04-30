@@ -1,0 +1,19 @@
+### Ignore operating system-specific files and directories
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+
+### Ignore development environment-specific files and directories
+
+# PhpStorm
+.idea/
+
+
+### Ignore application-specific files and directories
+
+/.Build
+composer.lock

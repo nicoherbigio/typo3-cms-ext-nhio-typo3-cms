@@ -1,0 +1,32 @@
+### The following settings apply to the page tree in the TYPO3 CMS backend.
+
+options {
+    pageTree {
+        # Disables the display of the page ID before the page title.
+        # data type: Boolean; default: not specified
+        showPageIdWithTitle = 0
+
+        # Disables the display of the domain after the page title.
+        # data type: Boolean; default: not specified
+        showDomainNameWithTitle = 0
+
+        # Disables the display of the navigation title instead of the page title.
+        # data type: Boolean; default: not specified
+        showNavTitle = 0
+
+        # Disables searching based on the search term entered in the page alias.
+        # data type: Boolean; default: not specified
+        searchInAlias = 0
+    }
+
+    contextMenu {
+        table.pages {
+            # Deactivates the display of the following context menu entries.
+            #   * menu item: Create new page
+            #   * menu item: More options > Create new page via wizard
+            #   * menu item: More options > Set as starting point for the page tree
+            # data type: String; default: not specified
+            tree.disableItems = new,newWizard,mountAsTreeRoot
+        }
+    }
+}
