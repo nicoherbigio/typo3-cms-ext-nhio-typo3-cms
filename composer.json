@@ -33,7 +33,7 @@
   },
 
   "replace": {
-    "nhio_typo3_cms": "self.version",
+    "nicoherbigio/typo3-cms-ext-nhio-typo3-cms": "self.version",
     "typo3-ter/nhio-typo3-cms": "self.version"
   },
 
